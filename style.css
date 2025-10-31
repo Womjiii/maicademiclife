@@ -55,7 +55,7 @@ nav ul li a:hover {
   color: #00b894;
 }
 
-/* Hamburger menu for mobile */
+/* Hamburger icon */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -67,6 +67,29 @@ nav ul li a:hover {
   width: 25px;
   margin-bottom: 5px;
   border-radius: 2px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
 
 /* ===== HERO ===== */

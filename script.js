@@ -9,3 +9,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 console.log("Portfolio loaded successfully!");
+
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+
