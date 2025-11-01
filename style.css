@@ -8,7 +8,7 @@
 
 /* ===== BODY ===== */
 body {
-  background-color: #0a0a0a;
+  background-color: 	#d16aff;
   color: #f5f5f5;
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
@@ -19,7 +19,7 @@ body {
 
 /* ===== HEADER ===== */
 header {
-  background: #111;
+  background: linear-gradient(#d16aff, #9614d0,	#660094,#bb44f0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,14 +27,18 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  border: 5px solid;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+section h1 {
+font-size: 30px;
 }
 
 .logo {
   font-size: 1.8rem;
   color: #fff;
-}
-.logo span {
-  color: #00b894;
 }
 
 /* Navigation */
@@ -50,9 +54,10 @@ nav ul li a {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
+  font-weight: bolder;
 }
 nav ul li a:hover {
-  color: #00b894;
+  color: #310047;
 }
 
 /* Hamburger icon */
@@ -67,7 +72,10 @@ nav ul li a:hover {
   width: 25px;
   margin-bottom: 5px;
   border-radius: 2px;
+
 }
+
+
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -94,25 +102,22 @@ nav ul li a:hover {
 
 /* ===== HERO ===== */
 .hero {
-  background: linear-gradient(to bottom right, #111, #000);
+  background-color:#310047;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0 1rem;
+  padding-top: 19px;
+  
 }
 
 .hero-content h2 {
   font-size: 2.5rem;
 }
 .hero-content span {
-  color: #00b894;
-}
-.hero-content p {
-  margin: 0.8rem 0 1.5rem;
-  font-size: 1.1rem;
-  color: #ccc;
+  color: white;
 }
 
 .btn {
@@ -131,10 +136,14 @@ nav ul li a:hover {
 section {
   padding: 3rem 1rem;
   text-align: center;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: 	#310047;
 }
 section h2 {
+padding-top: 50px;
   color: #00b894;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* ===== PROJECTS ===== */
@@ -175,6 +184,7 @@ footer {
   font-size: 0.9rem;
   color: #777;
   border-top: 1px solid #222;
+  margin-top: 10px;
 }
 
 /* ===== RESPONSIVE MEDIA QUERIES ===== */
@@ -236,5 +246,107 @@ footer {
 
   header {
     padding: 0.5rem 1rem;
+  }
+}
+/* ===== CARDS ===== */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  margin-top: 2rem;
+  
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 365px;
+  width: 365px;
+  justify-content: space-evenly;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;        /* You can adjust this */
+  object-fit: cover;    /* crops edges, keeps proportions */
+  border-radius: 10px 10px 0 0;
+}
+
+
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  .card img {
+    height: 200px;
+  }
+}
+.fb-btn a {
+  display: inline-block;
+  color: blue;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+
+
+/* ===== FACEBOOK BUTTON ===== */
+.fb-btn {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.fb-btn a {
+  display: inline-block;
+  background-color: #1877f2; /* Facebook blue */
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.fb-btn a:hover {
+  background-color: #145dbf;
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE CARDS AND BUTTON ===== */
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr; /* single column layout for small screens */
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .fb-btn a {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1rem;
   }
 }
