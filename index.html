@@ -1,274 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jaymaica | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header style="text-shadow: 2px 2px 5px rgba(0,0,0,0.7);">
-      <h1 class="logo">Maica's Academic Life<span>.</span></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaymaica | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1 class="logo">Maica's Academic Life<span>.</span></h1>
 
-      <!-- Hamburger menu -->
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <img src="img/img21.jpg" alt="Jaymaica" class="profile" />
+      <h1>Hello, I’m <span>Jaymaica</span></h1>
+      <h3>Student</h3>
+      <p class="quote">“Every hour spent studying is an investment in who you are becoming.”</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="font-size: 30px;">
+      Hi! I’m <b>Jaymaica A. Alagos</b>, 22 years old, born on October 17, 2003 in Teresa, Rizal.
+      I’m currently a 4th-year college student at the University of Rizal System, Binangonan Campus.
+      I love playing badminton, exploring new places, and finding joy in small things.
+    </p>
+  </section>
+
+  <!-- MISSION -->
+  <section id="mission">
+    <h2>Mission</h2>
+    <p style="font-size: 30px;">
+      “My mission is to study with dedication and curiosity, to gain knowledge and skills that will
+      help me grow academically and personally.”
+    </p>
+  </section>
+
+  <!-- VISION -->
+  <section id="vision">
+    <h2>Vision</h2>
+    <p style="font-size: 30px;">
+      “My vision is to become a lifelong learner who continuously seeks knowledge and success
+      through hard work and passion for learning.”
+    </p>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-container">
+      <div class="edu-card">
+        <h3>Elementary</h3>
+        <p>Pantay Elementary School</p>
+        <img src="img/paes.jpg" alt="PAES">
       </div>
-
-      <nav>
-        <ul style="text-align: center">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- HERO SECTION -->
-
-    <section class="hero" id="home" style="margin-top: 50px; height: 700px;">
-      <div class="img-container" style="display: inline; margin-top: 10px;">
-        <img
-          style="width: 300px; height: 300px; border-radius: 50%"
-          src="img/img21.jpg"
-          alt="profile"
-        />
-        <div class="hero-content">
-          <h1 style="padding-left: 20px">Hello, I’m <span>Jaymaica</span></h1>
-          <h3 style="padding-bottom: 17px">Student</h3>
-          <i
-            ><h1>
-              "Every hour spent studying <br />is an investment in who you are
-              becoming"
-            </h1></i
-          >
-        </div>
+      <div class="edu-card">
+        <h3>Junior High</h3>
+        <p>Pantay Integrated High School</p>
+        <img src="img/pihs.jpg" alt="PIHS">
       </div>
-    </section>
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p style="font-size: 30px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7);">
-        Hi! I’m Jaymaica A. Alagos, 22 years old, born on october 17,2003 at
-        Teresa, Rizal. I’m currently a 4th-year college student at the
-        University of Rizal System, Binangonan Campus. Aside from studying, I
-        love to play badminton, explore new places, and discover simple joys in
-        everyday life. These things help me relax, stay motivated, and enjoy
-        life outside of academics.
-      </p>
-    </section>
-
-    <section id="mission">
-      <h2>Mission</h2>
-      <p style="font-size: 30px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7);">
-        <i
-          >"My mission is to study with dedication and curiosity, to gain
-          knowledge and skills that will help me grow not only academically but
-          also as a person. I strive to make learning meaningful and use what I
-          learn to make a positive difference in my future."</i
-        >
-      </p>
-    </section>
-
-    <section id="vision">
-      <h2>Vision</h2>
-      <p style="font-size: 30px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7);">
-        <i
-          >"My vision is to become a lifelong learner who continuously seeks
-          knowledge, overcomes challenges, and achieves success through hard
-          work, perseverance, and a passion for learning."</i
-        >
-      </p>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education">
-      <h2>Education</h2>
-    <p>  <b style="color:black; font-size: 40px; text-shadow: 2px 2px 5px rgba(202, 193, 200, 0.7);">Elementary</b><br />
-      Pantay Elementary School <br />
-      <div><img src="img/paes.jpg" alt="paes" /></div>
-      <b style="color: black; font-size: 40px; text-shadow: 2px 2px 5px rgba(202, 193, 200, 0.7);">Junior High School</b>
-      <br />Pantay Integrated High School <br />
-      <div><img src="img/pihs.jpg" alt="paes" /></div>
-      <b style="color: black; font-size: 40px; text-shadow: 2px 2px 5px rgba(202, 193, 200, 0.7);">Senior High School</b>
-      <br />Sumulong College of Arts and Sciences <br />
-      <div><img src="img/scas.jpg" alt="paes" /></div>
-      <b style="color: black; font-size: 40px; text-shadow: 2px 2px 5px rgba(202, 193, 200, 0.7);"> College </b><br />University of
-      Rizal System <br />
-      <div><img src="img/ursb.jpg" alt="paes" /></div>
-      </p>
-    </section>
-
-    <!-- ACHIEVEMENTS -->
-    <section id="achievements">
-      <h2 style="font-size: 45px">Achievements</h2>
-      <p style="font-size: 20px; text-align: left; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); display: inline;">
-        <u>Grade 4 – 6</u> <br> Served as Class Treasurer<br />
-        <u>Grade 4 – 6</u> <br>Treasurer of various school clubs and organizations such as
-        the Math Club, Science Club, and English Club <br />
-        <u>Grade 6</u> <br> Elected as Treasurer of the Supreme Pupil Government <br />
-        <u>Grade 6</u> <br> Graduated with Honors <br />
-        <u>Grade 8 – 10</u> <br> Represented the school in badminton competitions <br />
-        <u>Grade 10</u><br> Graduated with Honors and ranked Top 3 in class <br />
-        <u>Grade 12</u><br> Graduated as Top 10 in class and ranked Top 4 overall in
-        average <br />
-        College</u> Received my first scholarship — Iskolar ni Gob and Barangay
-        Scholarship <br />
-        <u>1st Year – 3rd Year College</u><br> Maintained good academic performance with a
-        high average in class <br />
-      </p>
-    </section>
-
-    <!-- GALLERY -->
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <div class="card-container">
-        <!-- Card 1 -->
-        <div class="card">
-          <img src="img/img1.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-          <img src="img/img2.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <div class="card">
-            <img src="img/img3.jpg" alt="Project 1" />
-          </div>
-        </div>
-        <!-- Card 1 -->
-        <div class="card">
-          <img src="img/img4.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-          <img src="img/img5.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <div class="card">
-            <img src="img/img6.jpg" alt="Project 1" />
-          </div>
-        </div>
-
-        <!-- Card 1 -->
-        <div class="card">
-          <img src="img/img7.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-          <img src="img/img8.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <div class="card">
-            <img src="img/img9.jpg" alt="Project 1" />
-          </div>
-        </div>
-
-        <!-- Card 1 -->
-        <div class="card">
-          <img src="img/img10.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-          <img src="img/img11.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <div class="card">
-            <img src="img/img12.jpg" alt="Project 1" />
-          </div>
-        </div>
-
-        <!-- Card 1 -->
-        <div class="card">
-          <img src="img/img13.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-          <img src="img/img14.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <img src="img/img15.jpg" alt="Project 1" />
-        </div>
-        <div class="card">
-          <img src="img/img16.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 1 -->
-        <div class="card">
-          <img src="img/img17.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-          <img src="img/img18.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <img src="img/img19.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 1 -->
-        <div class="card">
-          <img src="img/img20.jpg" alt="Project 1" />
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-          <img src="img/img21.jpg" alt="Project 1" />
-        </div>
+      <div class="edu-card">
+        <h3>Senior High</h3>
+        <p>Sumulong College of Arts and Sciences</p>
+        <img src="img/scas.jpg" alt="SCAS">
       </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Let’s connect! Feel free to reach out anytime.</p>
-      <div class="contact-info">
-        <p>Email: alagosjaymaica@gmail.com</p>
-        <p>
-          Facebook:
-          <a
-            style="color: blue"
-            href="https://www.facebook.com/alagos.acebeda"
-            target="_blank"
-            class="fb-btn"
-          >
-            jaymaica.alagos08
-          </a>
-        </p>
-
-        <p>Contact number: 09271507566</p>
+      <div class="edu-card">
+        <h3>College</h3>
+        <p>University of Rizal System</p>
+        <img src="img/ursb.jpg" alt="URSB">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <p>&copy; 2025 Jaymaica. All rights reserved.</p>
-    </footer>
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul class="achievements-list" style="font-size: 30px;">
+      <li>🏅 Class Treasurer (Grades 4–6)</li>
+      <li>📘 Treasurer of Math, Science & English Clubs</li>
+      <li>🏫 Treasurer of Supreme Pupil Government (Grade 6)</li>
+      <li>🎓 Graduated with Honors in Grade 6 & Grade 10</li>
+      <li>🏸 Represented school in badminton competitions</li>
+      <li>🎖 Top 10 in Senior High & consistent scholar in College</li>
+    </ul>
+  </section>
 
-    <!-- SCRIPT -->
-    <script src="script.js"></script>
-  </body>
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <img src="img/img1.jpg" alt="">
+      <img src="img/img2.jpg" alt="">
+      <img src="img/img3.jpg" alt="">
+      <img src="img/img4.jpg" alt="">
+      <img src="img/img5.jpg" alt="">
+      <img src="img/img6.jpg" alt="">
+      <img src="img/img7.jpg" alt="">
+      <img src="img/img8.jpg" alt="">
+      <img src="img/img9.jpg" alt="">
+      <img src="img/img10.jpg" alt="">
+      <img src="img/img11.jpg" alt="">
+      <img src="img/img12.jpg" alt="">
+      <img src="img/img13.jpg" alt="">
+      <img src="img/img14.jpg" alt="">
+      <img src="img/img15.jpg" alt="">
+      <img src="img/img16.jpg" alt="">
+      <img src="img/img17.jpg" alt="">
+      <img src="img/img18.jpg" alt="">
+      <img src="img/img19.jpg" alt="">
+      <img src="img/img20.jpg" alt="">
+      <img src="img/img21.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s connect! Feel free to reach out anytime.</p>
+    <div class="contact-info">
+      <p>📧 <b>Email:</b> alagosjaymaica@gmail.com</p>
+      <p>📱 <b>Contact:</b> 0927-150-7566</p>
+      <br>
+      <a href="https://www.facebook.com/alagos.acebeda" target="_blank" class="btn fb-btn">Visit Facebook</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Jaymaica. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js">
+
+  </script>
+</body>
 </html>

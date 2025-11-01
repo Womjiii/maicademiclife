@@ -1,19 +1,14 @@
-// Smooth scroll (modern browsers already support this via CSS)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", e => {
     e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
+    document.querySelector(link.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
     });
   });
 });
 
-console.log("Portfolio loaded successfully!");
-
+// Hamburger menu
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
-
-hamburger.addEventListener('click', () => {
-  nav.classList.toggle('active');
-});
-
+hamburger.addEventListener('click', () => nav.classList.toggle('active'));
